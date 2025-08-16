@@ -32,6 +32,9 @@ func Test_Kusto_Cluster_20240413_CRUD(t *testing.T) {
 				Name:     to.Ptr(kusto.AzureSku_Name_Standard_D13_V2),
 				Tier:     to.Ptr(kusto.AzureSku_Tier_Standard),
 			},
+			Identity: &kusto.Identity{
+				Type: to.Ptr(kusto.Identity_Type("SystemAssigned")),
+			},
 		},
 	}
 

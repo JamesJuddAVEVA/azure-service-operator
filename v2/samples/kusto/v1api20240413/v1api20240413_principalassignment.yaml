@@ -4,8 +4,9 @@ metadata:
   name: aso-sample-principalassignment
   namespace: default
 spec:
-  location: westus2
   owner:
     name: aso-sample-database
-  principalType: "App"
-  role: "Admin"
+  principalId: "james.judd@aveva.com"
+  principalType: "User"
+  role: "Viewer"
+  tenantId: "d1fe8e44-4d35-4dad-8ea9-d9d9cb9a988c"
